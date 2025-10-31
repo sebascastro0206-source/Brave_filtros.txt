@@ -1,0 +1,77 @@
+! ============================================================
+!  Brave Custom Filters – Lista optimizada por ChatGPT (2025-10-31)
+!  Compatible con: Brave, AdGuard, uBlock Origin
+! ============================================================
+
+! --- 🧭 Bloqueo de rastreadores comunes ---
+||doubleclick.net^
+||googlesyndication.com^
+||google-analytics.com^
+||facebook.net^$third-party
+||connect.facebook.net^
+||tiktokcdn.com^$third-party
+||snapchat.com^$third-party
+||analytics.twitter.com^
+||log.pinterest.com^
+||pixel.quantserve.com^
+||tracking.adobe.com^
+||amazon-adsystem.com^
+||scorecardresearch.com^
+
+! --- 🛑 Bloqueo de anuncios ---
+||ads.yahoo.com^
+||adservice.google.com^
+||advertising.com^
+||servedbyopenx.com^
+||adnxs.com^
+||rubiconproject.com^
+||criteo.net^
+||outbrain.com^
+||taboola.com^
+||zedo.com^
+
+! --- 🧹 Ocultar banners, cookies y popups molestos ---
+##.cookie-banner
+##.gdpr-consent
+##.consent-popup
+##.modal, .popup, .overlay, .backdrop
+##.newsletter-popup
+##.subscribe-popup
+##.full-screen-ad
+##[id^="ad_"]
+##[class*="advert"]
+
+! --- 📺 Limpieza en YouTube ---
+youtube.com##.ytd-display-ad-renderer
+youtube.com##ytd-promoted-sparkles-text-search-renderer
+youtube.com##.ytd-video-masthead-ad-v3-renderer
+youtube.com##.ytd-companion-slot-renderer
+youtube.com##.ytd-promoted-video-renderer
+youtube.com##.ytp-ad-player-overlay
+
+! --- 📱 Redes sociales: eliminar embeds y widgets ---
+||platform.twitter.com/widgets.js$script
+||instagram.com/embed.js$script
+||connect.facebook.net/en_US/sdk.js$script
+||tiktok.com/embed.js$script
+||linkedin.com/embed/feed$script
+
+! --- 🚫 Bloquear redirecciones y clickbait ---
+||clickbait.*^
+||redirect.*^$doc
+||fakeupdate.*^
+||get-rich.*^
+||news.*.xyz^
+||linkvertise.com^
+||sh.st^
+||shortly.*^
+||adf.ly^
+
+! --- 🧰 Reglas de rendimiento ---
+*$popup,third-party
+*$webrtc,third-party
+*$image,third-party,domain=~trusted.com
+
+! ============================================================
+! Fin de la lista personalizada – Brave Custom Filters
+! ============================================================
